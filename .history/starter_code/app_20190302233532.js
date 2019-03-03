@@ -12,9 +12,9 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 
-const clientId =  process.env.CLIENT_ID,
+const clientId = '4e00e7b6dc75438d85abd08fdeb95344',
         scopes = ['user-read-private', 'user-read-email'],
-  clientSecret =  process.env.CLIENT_SECRET,
+  clientSecret =  '983c8a38e9534cdeb562c48d3f3f26f6',
    redirectUri = 'http://localhost:3000/users/auth/spotify/redirect';
  
 // Create the api object with the credentials
